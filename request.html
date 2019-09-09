@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Tracker</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav class="user-nav">
+    <h1><a href="userdashboard.html">Tracker</a></h1>
+    <ul class="nav-list">
+      <!-- <li><a href="request.html">All Request</a></li> -->
+      <li><a href="" class="create">Create Request</a></li>
+      <div class="logo">
+        <img src="assets/img/logo2.png" alt="User-image here" />
+      </div>
+      <li><a href="">Logout</a></li>
+    </ul>
+
+  </nav>
+  <section class="request-grid">
+    <div class="request">
+      <h2>Date</h2>
+      <h2>Heading</h2>
+      <h2>pending</h2>
+      <h2>type</h2>
+      <div style="margin: 20px 0;">
+        <a href="" class="btn edit">edit</a>
+        <a href="" class="btn" style="background:rgb(160, 14, 14)">Delete</a>
+      </div>
+    </div>
+    <div class="request">
+      <h2>Date</h2>
+      <h2>Heading</h2>
+      <h2>pending</h2>
+      <h2>type</h2>
+      <div style="margin: 20px 0;">
+        <a href="" class="btn edit">edit</a>
+        <a href="" class="btn" style="background:rgb(160, 14, 14)">Delete</a>
+      </div>
+    </div>
+    <div class="request">
+      <h2>Date</h2>
+      <h2>Heading</h2>
+      <h2>pending</h2>
+      <h2>type</h2>
+      <div style="margin: 20px 0;">
+        <a href="" class="btn edit">edit</a>
+        <a href="" class="btn" style="background:rgb(160, 14, 14)">Delete</a>
+      </div>
+    </div>
+    <div class="request">
+      <h2>Date</h2>
+      <h2>Heading</h2>
+      <h2>pending</h2>
+      <h2>type</h2>
+      <div style="margin: 20px 0;">
+        <a href="" class="btn edit">edit</a>
+        <a href="" class="btn" style="background:rgb(160, 14, 14)">Delete</a>
+      </div>
+    </div>
+    <div class="request">
+      <h2>Date</h2>
+      <h2>Heading</h2>
+      <h2>pending</h2>
+      <h2>type</h2>
+      <div style="margin: 20px 0;">
+        <a href="" class="btn edit">edit</a>
+        <a href="" class="btn" style="background:rgb(160, 14, 14)">Delete</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-modal">
+    <div class="modal-content">
+      <div class="modal-heading">
+        <h4>New Request</h4>
+        <span id="cancel">+</span>
+      </div>
+      <form method="post" action="" class="request-form">
+        <div class="input-container" style="margin-bottom:10px;">
+          <input type="text" class="input" name="title" placeholder="TITLE" />
+        </div>
+        <div>
+          <div style="margin-bottom:10px;">
+            <label for=" type">TYPE</label>
+            <select name="type" id="type">
+              <option value="">-- select --</option>
+              <option value="repair">Repair</option>
+              <option value="maintenance">Maintenance</option>
+            </select>
+          </div>
+
+          <div class="textarea">
+            <label for=" type">Message</label>
+            <textarea rows="4" cols="5" maxlength="100">
+
+              </textarea>
+          </div>
+          <input type="submit" name="submit" value="submit" class="button" />
+
+      </form>
+
+
+    </div>
+  </div>
+  </div>
+  <!-- edit modal -->
+  <div class="edit-bg-modal">
+    <div class="edit-modal-content">
+      <div class="edit-modal-heading">
+        <h4>Edit Request</h4>
+        <span id="editcancel">+</span>
+      </div>
+      <form method="post" action="" class="request-form">
+        <div class="input-container" style="margin-bottom:10px;">
+          <input type="text" class="input" name="title" placeholder="TITLE" />
+        </div>
+        <div>
+          <div style="margin-bottom:10px;">
+            <label for=" type">TYPE</label>
+            <select name="type" id="type">
+              <option value="">-- select --</option>
+              <option value="repair">Repair</option>
+              <option value="maintenance">Maintenance</option>
+            </select>
+          </div>
+
+          <div class="textarea">
+            <label for=" type">Message</label>
+            <textarea rows="4" cols="5" maxlength="100">
+
+                </textarea>
+          </div>
+          <input type="submit" name="submit" value="update" class="button" />
+
+      </form>
+
+
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <!-- Social Media -->
+    <!-- <ul>
+      <li><a href=" #"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        </ul> -->
+    <!-- social media -->
+    <p>&copy;Tracker 2019 by Ukpai Chukwuemeka </p>
+    <p>Powered by Andela</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
