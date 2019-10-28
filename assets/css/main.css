@@ -14,7 +14,7 @@ a {
 
 a:hover {
   opacity: 1;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 a.btn {
@@ -330,6 +330,22 @@ footer p a {
   /*increase opacity of backdrop*/
 }
 
+/*  Alert */
+
+#display {
+  text-align: center;
+  padding: .8em;
+  font-size: 1em;
+  visibility: hidden;
+  color: #f6f6f6;
+}
+
+#display.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s;
+}
+
 
 /* CONTAINER */
 .login-form-container {
@@ -338,7 +354,7 @@ footer p a {
   width: 100%;
   z-index: 1;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   margin-left: -200px;
   margin-top: -286px;
@@ -438,7 +454,7 @@ footer p a {
 
 .login-form .rememberme-container a:hover {
   color: #77EC67;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .login-form .rememberme span {
@@ -468,7 +484,7 @@ footer p a {
 
 .login-form .button:hover {
   background: #1f6ec9;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .login-form .button:focus {
@@ -488,7 +504,7 @@ footer p a {
 
 .login-form .register:hover {
   background: #d0d0d0;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 

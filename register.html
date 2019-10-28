@@ -14,8 +14,13 @@
   <div class="background">
   </div>
   <div class="backdrop"></div>
-  <div class="login-form-container" id="login-form" style="margin-bottom: 20px;">
+  <div class="login-form-container" id="signup-form" style="margin-bottom: 20px;">
     <div class="login-form-content" style=" margin-top: -20px;">
+      <!-- POP UP -->
+      <div class="alert" id="display">
+        <p id="alert"></p>
+      </div>
+      <!--  -->
       <a href="index.html">
         <h1 style="text-align: center;">Tracker
         </h1>
@@ -31,18 +36,22 @@
       </div>
       <form method="post" action="" class="login-form">
         <div class="input-container">
-          <input type="email" class="input" name="email" placeholder="Email" />
+          <input type="text" class="input firstname" name="firstName" placeholder="First Name" />
         </div>
         <div class="input-container">
-          <input type="text" class="input" name="username" placeholder="Username" />
+          <input type="text" class="input lastname" name="LastName" placeholder="Last Name" />
         </div>
         <div class="input-container">
-          <input type="password" id="login-password" class="input" name="password" placeholder="Password" />
+          <input type="email" class="input email" name="email" placeholder="Email" />
         </div>
         <div class="input-container">
-          <input type="password" id="login-password" class="input" name="confpassword" placeholder="Confirm Password" />
+          <input type="password" id="password" class="input" name="password" placeholder="Password" />
         </div>
-        <input type="submit" name="login" value="Join" class="button" />
+        <div class="input-container">
+          <input type="password" id="confirm-password" class="input" name="confirmpassword"
+            placeholder="Confirm Password" />
+        </div>
+        <input type="submit" name="login" value="Join" id="signup" class="button" />
         <!-- <a href="#google" class="register" style="background: #F73434; color: #fff;">SignUp with Google</a> -->
         <a href="login.html" class="register">I have an account</a>
       </form>
@@ -52,7 +61,10 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/script.js"></script> -->
+  <script src="assets/js/auth.js"></script>
+
 </body>
 
 </html>

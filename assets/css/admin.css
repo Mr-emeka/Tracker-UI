@@ -1,225 +1,352 @@
-    /* The side navigation menu */
-    .sidenav {
-      height: 100%;
-      /* 100% Full-height */
-      width: 0;
-      /* 0 width - change this with JavaScript */
-      position: fixed;
-      /* Stay in place */
-      z-index: 1;
-      /* Stay on top */
-      top: 0;
-      /* Stay at the top */
-      left: 0;
-      background-color: rgb(26, 26, 26);
-      /* Black*/
-      overflow-x: hidden;
-      /* Disable horizontal scroll */
-      padding-top: 60px;
+/* ADMIN DASH */
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: rgb(26, 26, 26);
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
 
-    }
+}
 
-    /* The navigation menu links */
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 
-    }
+}
 
-    /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
-    /* Position and style the close button (top right corner) */
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-
-    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-    @media screen and (max-height: 450px) {
-      .sidenav {
-        /* margin: 50% auto; */
-        padding-top: 65px;
-      }
-
-      .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
-
-      .sidenav a {
-        font-size: 18px;
-      }
-    }
-
-    #mySidenavlg {
-      /* min-height: 82vh; */
-      display: flex;
-      flex-basis: 20%;
-      flex-direction: column;
-      background-color: #414a4f;
-      color: white;
-      padding-top: 60px;
-    }
-
-    /* When you mouse over the navigation links, change their color */
-    #mySidenavlg a:hover {
-      color: #cacaca;
-    }
-
-    /* The navigation menu links */
-    #mySidenavlg a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #ffffff;
-
-    }
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    /* margin: 50% auto; */
+    padding-top: 65px;
+  }
 
-    /* Style the button that is used to open the sidepanel */
-    .openbtn {
-      display: none;
-      font-size: 30px;
-      cursor: pointer;
-      color: white;
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 
-    }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
 
-    .openbtn:hover {
-      color: rgb(243, 241, 241);
-    }
+#mySidenavlg {
+  /* min-height: 82vh; */
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: column;
+  background-color: #414a4f;
+  color: white;
+  padding-top: 60px;
+}
 
-    .closebtn {
-      font-size: 40px;
-      transform: rotate(45deg);
-      cursor: pointer;
-      color: white;
+/* When you mouse over the navigation links, change their color */
+#mySidenavlg a:hover {
+  color: #cacaca;
+}
 
-    }
+/* The navigation menu links */
+#mySidenavlg a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
 
-    @media (max-width:996px) {
-      .nav-list {
-        display: none;
-      }
+}
 
-      .openbtn {
-        display: flex;
-        margin-left: auto;
-        margin-right: 30px;
-        font-size: 40px;
-        cursor: pointer;
-        color: white;
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
 
-      }
+}
 
-      .admin-dashboard {
-        display: grid;
-        grid-template-columns: 300px 2fr;
-        grid-template-rows: 2fr;
-        min-height: 40vh;
-      }
-    }
+.openbtn:hover {
+  color: rgb(243, 241, 241);
+}
 
-    .admin-dashboard {
-      display: grid;
-      grid-template-columns: 250px 2fr;
-      grid-template-rows: 2fr;
-      min-height: 82.50vh;
-    }
+.closebtn {
+  font-size: 40px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
 
-    .breadcrum {
-      padding: 10px 20px;
-      background: rgb(233, 233, 233);
-      margin: 10px;
-      border-radius: 5px;
-    }
+}
 
-    .data {
-      display: grid;
+@media (max-width:996px) {
+  .nav-list {
+    display: none;
+  }
 
-    }
+  .openbtn {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
 
-    .data>a>div {
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr 1fr;
-      margin: 10px;
-      background: rgb(233, 233, 233);
-      padding: 5px;
-      justify-items: center;
-      border-radius: 5px;
-    }
+  }
 
-    .pagination {
-      display: inline-block;
-      margin-left: 25%;
-      margin-top: 10px;
+  .admin-dashboard {
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    grid-template-rows: 2fr;
+    min-height: 40vh;
+  }
+}
 
-    }
+.admin-dashboard {
+  display: grid;
+  grid-template-columns: 250px 2fr;
+  grid-template-rows: 2fr;
+  min-height: 82.50vh;
+}
 
-    .pagination a {
-      color: black;
-      float: left;
-      font-size: 1.5em;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
+.breadcrum {
+  padding: 10px 20px;
+  background: rgb(233, 233, 233);
+  margin: 10px;
+  border-radius: 5px;
+}
 
-    .pagination a.active {
-      background-color: #4CAF50;
-      color: white;
-      border-radius: 5px;
-    }
+.data {
+  display: grid;
 
-    .pagination a:hover:not(.active) {
-      background-color: #ddd;
-      border-radius: 5px;
-    }
+}
 
-    @media(max-width:996px) {
-      #mySidenavlg {
-        display: none;
-      }
+.data>a>div {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  margin: 10px;
+  background: rgb(233, 233, 233);
+  padding: 5px;
+  justify-items: center;
+  border-radius: 5px;
+}
 
-      .admin-dashboard {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-      }
-    }
+.pagination {
+  display: inline-block;
+  margin-left: 25%;
+  margin-top: 10px;
 
-    @media(min-width:996px) {
-      .sidenav {
-        display: none;
-      }
-    }
+}
 
-    @media (max-width:560px) {
-      .pagination {
-        display: inline-block;
-        margin-left: 15%;
-        margin-top: 10px;
+.pagination a {
+  color: black;
+  float: left;
+  font-size: 1.5em;
+  padding: 8px 16px;
+  text-decoration: none;
+}
 
-      }
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
 
-      .pagination a {
-        color: black;
-        float: left;
-        font-size: 1em;
-        padding: 8px 8px;
-        text-decoration: none;
-      }
-    }
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+@media(max-width:996px) {
+  #mySidenavlg {
+    display: none;
+  }
+
+  .admin-dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+@media(min-width:996px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+@media (max-width:560px) {
+  .pagination {
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 10px;
+
+  }
+
+  .pagination a {
+    color: black;
+    float: left;
+    font-size: 1em;
+    padding: 8px 8px;
+    text-decoration: none;
+  }
+}
+
+.query-params {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: rgb(233, 233, 233);
+  color: black;
+  grid-gap: 2em;
+  padding: 10px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.query-params select {
+  width: 100%;
+  height: 30px
+}
+
+@media (max-width:720px) {
+  .query-params {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(233, 233, 233);
+    color: black;
+    padding: 10px;
+    grid-gap: .5em;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+
+/*  Alert */
+
+/*  Alert */
+
+#display {
+  text-align: center;
+  padding: .8em;
+  font-size: 1em;
+  visibility: hidden;
+  color: #f6f6f6;
+}
+
+#display.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s;
+}
+
+.admin-request-dash {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  color: black;
+  background-color: rgb(233, 233, 233);
+  align-content: center;
+  border-radius: .33em;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.admin-request-dash>ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr .5fr 1fr;
+  padding: 20px;
+  font-size: 1em;
+  border-bottom: 1px solid #414a4f;
+}
+
+.admin-request-dash>ul:hover {
+  background-color: #414a4f;
+  color: white;
+  cursor: pointer;
+
+}
+
+.admin-request-dash>ul>li {
+  list-style-type: none;
+}
+
+.btn-section {
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+#previous-btn {
+  width: 100px;
+  margin: auto;
+  background-color: #414a4f;
+  color: white;
+  height: 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+}
+
+#next-btn {
+  width: 100px;
+  margin: auto;
+  background-color: #414a4f;
+  color: white;
+  height: 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+}
+
+.admin-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  color: black;
+  background-color: rgb(233, 233, 233);
+  align-content: center;
+  border-radius: .33em;
+  margin: 10px;
+  padding: 10px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px auto;
+}
+
+.disapprove-btn {
+  color: white;
+  background-color: red;
+}

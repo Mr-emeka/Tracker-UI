@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Tracker</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+
+<body id="admin-page">
+  <nav>
+    <h1><a href="admin.html">Tracker</a></h1>
+    <div class="openbtn" onclick="openNav()">
+      &#9776;
+    </div>
+
+    <ul class="nav-list">
+      <li>
+        <h3>Ukpai Chukwuemeka</h3>
+      </li>
+      <div class="logo">
+        <img src="assets/img/logo2.png" alt="User-image here" />
+      </div>
+      <li><a id="logout" href="#">Logout</a></li>
+    </ul>
+  </nav>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="admin.html">All Request</a>
+    <a href="pending.html">Pending Request</a>
+    <a href="resolved.html">Resolved Request</a>
+    <a id="sidenav-logout" href="#">Logout</a>
+  </div>
+  <section class="admin-dashboard">
+    <div id="mySidenavlg" class="sidenavlg">
+      <a href="admin.html">All Request</a>
+      <a href="pending.html">Pending Request</a>
+      <a href="resolved.html">Resolved Request</a>
+
+    </div>
+    <div class="dash">
+      <div class="alert" id="display">
+        <p id="alert"></p>
+      </div>
+      <div class="breadcrum">
+        <h2>Admin Dashboard</h2>
+      </div>
+      <div class="query-params">
+        <div>
+          <select name="type" id="change_type">
+            <option value="">--Filter By Request Type --</option>
+            <option value="repair">Repair</option>
+            <option value="maintenance">Maintenance</option>
+          </select>
+        </div>
+        <div>
+          <select name="status" id="change_status">
+            <option value="">-- Filter By Status --</option>
+            <option value="pending">Pending</option>
+            <option value="approved">Aprroved</option>
+            <option value="disaprroved">Disapproved</option>
+            <option value="resolved">Resolved</option>
+          </select>
+        </div>
+        <div>
+          <input type="date" name="" class="ch-input">
+        </div>
+      </div>
+      <div class="admin-request-dash">
+      </div>
+      <div class="btn-section">
+        <button id="previous-btn">Prev</button>
+        <button id="next-btn">Next</button>
+      </div>
+      <div class="admin-preview">
+        <h4 id="displayUser"></h4>
+        <h4 id="displayEmail"></h4>
+        <div>
+          <h4 id="displayTitle"></h4>
+          <h4 id="displayDate"></h4>
+        </div>
+        <h4 id="displayType"></h4>
+        <p id="displayDescription"></p>
+        <h4 id="displayStatus"></h4>
+        <div id="buttons">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <!-- Social Media -->
+    <!-- <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul> -->
+    <!-- social media -->
+    <p>&copy;Tracker 2019 by Ukpai Chukwuemeka </p>
+    <p>Powered by Andela</p>
+  </footer>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+
+</html>
