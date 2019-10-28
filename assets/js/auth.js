@@ -62,6 +62,8 @@ if (formSignup) {
             setTimeout(() => {
               window.location.replace('login.html');
             }, 1000);
+          } else if (res.code === 400) {
+            displayAlert(response.message, 3);
           } else {
             displayAlert(response.message, 3);
           }
