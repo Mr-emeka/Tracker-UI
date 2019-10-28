@@ -34,7 +34,7 @@ if (formSignup) {
     e.preventDefault();
     const firstname = document.querySelector('.firstname').value.toLowerCase();
     const lastname = document.querySelector('.lastname').value.toLowerCase();
-    const email = document.querySelector('.email').value.toLowerCase;
+    const email = document.querySelector('.email').value.toLowerCase();
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
 
